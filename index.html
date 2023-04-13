@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>On Jorge Luis Borges</title>
+    <title>Widget Sorter Progress Check-in</title>
     <meta name="author" content="Joseph Del Val">
-    <meta name="keywords" content="Writing, Argentina, Fiction, Fantasy">
-    <meta name="description" content="Information about Jorge Luis Borges">
+    <meta name="keywords" content="Meeting, Minutes, Widget, Sort">
+    <meta name="description" content="Check-in meeting minutes for widget sorting software">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
+    <header>
+      <h1 name="top">Widget Sorter - Progress Check-in</h1>
+      <h2>Progress Check-in for Implementation of a Widget Sorter</h2>
+      <h2>4/11/2023</h2>
+      <p>Minutes recorded by Joseph Del Val, A14590606</p>
+    </header>
+    <main>
+      <section>
+        <img src="images/stopwatch.jpg" width="200">
+        <p>Pictured above: the stopwatch recoding the literal minutes of the meeting.</p>
+        <h3>Attendance List:</h3>
+        <ul>
+          <li>Joseph Del Val</li>
+          <li>Ireneo Funes</li>
+          <li>Pierre Menard</li>
+        </ul>
+        <h3>Agenda:</h3>
+        <ol>
+          <li>Unfinished business from last meeting</li>
+          <li>Ireneo Funes's Progress update</li>
+          <li>Pierre Menard's Progress update</li>
+          <li>Literature Poll</li>
+        </ol>
+        <hr>
+      </section>
+      <section>
+        <h3>Unfinished business</h3>
+        <p>Ireneo Funes finishes his tirade about tabs and spaces, wasting around thirty minutes of time to no practical significance</p>
+        <hr>
+      </section>
+      <section>
+        <h3>Ireneo Funes's Progress update</h3>
+        Ireneo Funes claims the following occurred, preventing him from making progress on the widget sorter implementation:
+        <ul>
+          <li><b>Tragedy!!</b>-- he lost an exhuberent amount of money gambling and had to work overtime to pay it off</li>
+          <li>He was washing his hair</li>
+          <li><strong>Gangstalkers</strong> keep showing up at his house and threatening him</li>
+        </ul>
+        <p>Above all, <br> he has been too busy reading works by <em>Jorge Luis Borges.</em></p>
+
+        Below is a five-sentence story by Borges which he proceded to read aloud. 
+        <details>
+          <summary>The Plot</summary>
+          <p>To make his horror perfect, Caesar, hemmed about at the foot of a statue by his friends’ impatient knives, discovers among the faces and the blades the face of Marcus Junius Brutus, his ward, perhaps his very son—and so Caesar stops defending himself, and cries out <i>Et tu, Brute?</i> Shakespeare and Quevedo record that pathetic cry.</p>
+          <p>Destiny takes pleasure in repetition, variants, symmetries: nineteen centuries later, in the south of the Province of Buenos Aires, a gaucho is attacked by other gauchos. As he falls he recognizes an adopted son of his and says to him with gentle reproof and slow surprise (these words must be heard, not read), <i>Pero che!</i> He is being killed, and he does not know he is dying so that a scene may be repeated.</p>
+        </details>
+        <hr>
+      </section>
+      <section>
+        <h3>Pierre Menard's progress update</h3>
+        <p>Pierre Menard demonstrated his new <a href="https://en.wikipedia.org/wiki/Bogosort">Bogosort</a> implementation. Below is Funes's reaction to the algorithm.</p>
+        <audio src="images/reaction.mp3" type="audio/mpeg" controls></audio>
+        <p>Below, is Menard's <i>Video demonstration</i> of the algorithm</p>
+        <video width="480" height="360" controls>
+          <source src="images/bogosort.mov">
+        </video>
+        <hr>
+      </section>
+      <section>
+        <h3>Literature Poll</h3>
+        <form>
+          <fieldset>
+            <legend>Enter literature preferences below</legend>
+            <label>Do you like literature?</label><br>
+            <input type="radio" name="like"><label>I love it!</label><br>
+            <input type="radio" name="like"><label>I like it.</label><br>
+            <input type="radio" name="like"><label>I'm indifferent.</label><br>
+            <input type="radio" name="like"><label>Not really.</label><br>
+            <input type="radio" name="like"><label>I hate it!</label><br><br>
+            <label>Do you have a favorite author? If so, write them below!</label><br>
+            <input type="text"><br><br>
+            <label>If you wrote an author, what do you like about them?</label><br>
+            <label>If not, what is something you like instead?</label><br>
+            <textarea rows="5" cols="25"></textarea><br><br>
+
+            <label>Please select your opinion of Jorge Luis Borges:</label><br>
+            <select id="borges">
+              <option value="Never heard of him">Never heard of him.</option>
+              <option value="I'm a fan!">I'm a fan!</option>
+              <option value="Indifferent">Indifferent</option>
+              <option value="Not a fan">Not a fan</option>
+            </select><br><br>
+
+            <label>For physical copies, do you prefer Hardback or Paperback?</label><br>
+            <input list="physical">
+            <datalist id="physical">
+              <option value="Hardback">
+              <option value="Paperback">
+            </datalist><br><br>
+
+            <label>Please enter the date below:</label><br>
+            <input type="date"><br><br>
+            <input type="checkbox"><label>I am not a robot.</label><br><br>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p><i>So conclude the minutes-- next check-in will appear as scheduled.</i></p>
+      <nav><a href="#top">Take me back to the top!</a></nav>
+    </footer>
   </body>
 </html>
