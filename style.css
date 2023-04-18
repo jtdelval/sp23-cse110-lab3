@@ -1,0 +1,118 @@
+/* It begins */
+@font-face {
+    font-family: "Abril";
+    src: url(fonts/AbrilFatface-Regular.ttf);
+}
+* {
+    font-family: "Abril";
+}
+body {
+    background-color: #89BAF3;
+    display:inline-block;
+
+    border-style: solid;
+    border-color: azure;
+    border-width: 5px;
+    border-radius: 10px;
+
+    margin: 25px 0.52in 50px 20pt;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+
+    color:rgb(73, 73, 45);
+}
+p {
+    margin-left: 1vw;
+    margin-right: 1vh;
+    margin-top: 0.5vmax;
+    margin-bottom: 1vmax;
+
+    display:block;
+
+    padding: 1px 1px 1px 1px;
+}
+p.caption {
+    text-align:right;
+}
+h1 {
+    left:1px;
+    position:static;
+}
+h3 {
+    margin: auto;
+}
+footer {
+    text-align: right;
+}
+.anger {
+    background-color: hsl(0, 0%, 0%);
+    color: red;
+    text-decoration: solid underline overline red;
+    max-height:100;
+    max-width:500;
+}
+
+#stopwatch {
+    left:60%;
+    top: 5px;
+    position: sticky;
+    height:150px;
+    width: 200px;
+}
+
+#stopwatch:hover{
+    height:300px;
+    width:400px;
+}
+
+#Ireneo {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap:30px;
+}
+
+#Pierre {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+@media screen and (max-width: 50em){
+    body {
+        background-color: rgb(212, 123, 123);
+    }
+}
+
+a:link {
+    color:aquamarine;
+}
+a:visited{
+    color:blueviolet;
+}
+form input.checkbox:active{
+    height: 40px;
+    width: 40px;
+}
+option[value="Not a fan"]{
+    color:red;
+}
+input[type="text"], textarea{
+    background-color: antiquewhite;
+}
+
+fieldset > input[list="physical"]{
+    background-color: antiquewhite;
+}
+
+textarea ~ select{
+    background-color: antiquewhite;
+}
+br + input[type="date"]{
+    background-color: antiquewhite;
+}

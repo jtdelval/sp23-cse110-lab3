@@ -6,6 +6,7 @@
     <meta name="keywords" content="Meeting, Minutes, Widget, Sort">
     <meta name="description" content="Check-in meeting minutes for widget sorting software">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -16,8 +17,8 @@
     </header>
     <main>
       <section>
-        <img src="images/stopwatch.jpg" alt="Miki's stopwatch from Reovlutionary Girl Utena" width="200">
-        <p>Pictured above: the stopwatch recoding the literal minutes of the meeting.</p>
+        <p class="caption">Pictured below: the stopwatch recoding the literal minutes of the meeting.</p>
+        <img id="stopwatch" src="images/stopwatch.jpg" alt="Miki's stopwatch from Reovlutionary Girl Utena">
         <h3>Attendance List:</h3>
         <ul>
           <li>Joseph Del Val</li>
@@ -35,10 +36,10 @@
       </section>
       <section>
         <h3>Unfinished business</h3>
-        <p>Ireneo Funes finishes his tirade about tabs and spaces, wasting around thirty minutes of time to no practical significance</p>
+        <p>Ireneo Funes finishes his tirade about tabs and spaces, <span class="anger">wasting</span> around thirty minutes of time to no practical significance</p>
         <hr>
       </section>
-      <section>
+      <section id="Ireneo">
         <h3>Ireneo Funes's Progress update</h3>
         Ireneo Funes claims the following occurred, preventing him from making progress on the widget sorter implementation:
         <ul>
@@ -54,9 +55,10 @@
           <p>To make his horror perfect, Caesar, hemmed about at the foot of a statue by his friends’ impatient knives, discovers among the faces and the blades the face of Marcus Junius Brutus, his ward, perhaps his very son—and so Caesar stops defending himself, and cries out <i>Et tu, Brute?</i> Shakespeare and Quevedo record that pathetic cry.</p>
           <p>Destiny takes pleasure in repetition, variants, symmetries: nineteen centuries later, in the south of the Province of Buenos Aires, a gaucho is attacked by other gauchos. As he falls he recognizes an adopted son of his and says to him with gentle reproof and slow surprise (these words must be heard, not read), <i>Pero che!</i> He is being killed, and he does not know he is dying so that a scene may be repeated.</p>
         </details>
-        <hr>
+        
       </section>
-      <section>
+      <hr>
+      <section id="Pierre">
         <h3>Pierre Menard's progress update</h3>
         <div><p>Pierre Menard demonstrated his <span><i>new </i></span><a href="https://en.wikipedia.org/wiki/Bogosort">Bogosort</a> implementation. Below is Funes's reaction to the algorithm.</p></div>
         <audio src="images/reaction.mp3" controls></audio>
@@ -68,7 +70,7 @@
       </section>
       <section>
         <h3>Literature Poll</h3>
-        <form action="/action_page.php" method="get">
+        <form action="" method="get">
           <fieldset>
             <legend>Enter literature preferences below</legend>
             <label>Do you like literature?</label><br>
@@ -100,7 +102,7 @@
 
             <label>Please enter the date below:</label><br>
             <input type="date"><br><br>
-            <input type="checkbox"><label>I am not a robot.</label><br><br>
+            <input class="checkbox" type="checkbox"><label>I am not a robot.</label><br><br>
             <button type="submit">Submit</button>
           </fieldset>
         </form>
